@@ -39,7 +39,7 @@ public class TestingListaLigada {
             System.out.println("Contenido de la lista ligada: ");
             lista.printList();
             
-            /*System.out.println("=================================");
+            System.out.println("=================================");
             System.out.println("Inserción de un nuevo nodo");
             System.out.println("Escribe el elemento a insertar: ");
             entrada = bufer.readLine();
@@ -52,10 +52,17 @@ public class TestingListaLigada {
             System.out.println("=================================");
             System.out.println("Contenido de la lista ligada: ");
             lista.printList();
-            */
+            
+            System.out.println("=================================");
+            System.out.println("Eliminando el inicio de la lista ligada: ");
+            lista.borrarInicio(dato);
+            
+            System.out.println("=================================");
+            System.out.println("Contenido de la lista ligada: ");
+            lista.printList();
             
             //Otra lista ligada, ahora almacenada Strings
-            listaLigada<String>lista2 = new listaLigada<>();
+            /*listaLigada<String>lista2 = new listaLigada<>();
             System.out.println("=====Creando una lista de Strings=====");
             for(;;){
                 System.out.println("Escriba dato String para agregar a la lista: ");
@@ -69,7 +76,7 @@ public class TestingListaLigada {
             }
             System.out.println("Contenido de la lista de Strings: ");
             lista2.printList();
-            
+            */
     }
     
 }

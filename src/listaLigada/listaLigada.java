@@ -58,6 +58,19 @@ public class listaLigada <T>{
         actual.setSiguiente(auxiliar);
     }
     
+    //Metodo para eliminar un Nodo del inicio
+    public void borrarInicio(T dato){
+        Nodo inicio = new Nodo(dato);
+        Nodo fin = new Nodo(dato);
+        this.head = inicio;
+        this.actual = fin;
+        if(inicio==fin){
+            inicio=fin=null;
+        }else{
+            inicio=inicio.getSiguiente();
+        }
+    }
+    
     public void printList(){
         int posicion = 1;
         actual = head;
@@ -68,4 +81,5 @@ public class listaLigada <T>{
             posicion++;
         }
     }
+    
 }
